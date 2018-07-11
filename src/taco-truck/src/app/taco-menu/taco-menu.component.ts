@@ -32,17 +32,17 @@ export class TacoMenuComponent implements OnInit {
 
   sort(){
     this.menuItems = this.allMenuItems;
-    const direction = (this.sortDirection === 'asc') ? 1 : -1;
+    // const direction = (this.sortDirection === 'asc') ? 1 : -1;
 
-    this.menuItems.sort((a, b) => {
-      if (a[this.sortProperty] < b[this.sortProperty]) {
-        return -1 * direction;
-      } else if (a[this.sortProperty] > b[this.sortProperty]) {
-        return 1 * direction;
-      } else {
-        return 0;
-      }
-    });
+    // this.menuItems.sort((a, b) => {
+    //   if (a[this.sortProperty] < b[this.sortProperty]) {
+    //     return -1 * direction;
+    //   } else if (a[this.sortProperty] > b[this.sortProperty]) {
+    //     return 1 * direction;
+    //   } else {
+    //     return 0;
+    //   }
+    // });
 
 
   }
