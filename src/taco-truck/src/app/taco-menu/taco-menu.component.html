@@ -1,0 +1,23 @@
+<h3>Menu Item</h3>
+<div>
+  <label>
+    <input type="radio" name="value1" [(ngModel)]="sortProperty" [value]="'name'" (change)="sort()"> Name
+  </label>
+  <label>
+    <input type="radio" name="value2" [(ngModel)]="sortProperty" [value]="'price'" (change)="sort()">Price
+</label>
+<select name="role" (change)="sort()" [(ngModel)]="sortDirection">
+  <option [value]="'asc'">
+    Asc
+  </option>
+  <option [value]="'desc'">
+    Desc
+  </option>
+</select>
+</div>
+
+<div *ngFor="let item of menuItems">
+  <h3>{{item.name}}</h3>
+  <p>{{item.description}}</p>
+  <p>{{item.price}}</p>
+</div>
